@@ -1,0 +1,19 @@
+extends head 
+block content
+    div.container
+        div.table 
+            div.head-table
+                div ID 
+                div Email 
+                div Імʼя
+                div Видалити
+            div.list-users
+                each item in users
+                    div.user
+                        div.id= item._id
+                        div.email= item.email
+                        div.name= item.username
+                        div.box-btn
+                            form(action=`/users/delete` method="post")
+                                input(type="hidden" name="user_id" value=`${item._id}`)
+                                button(class="delete" type="submit") Видалити

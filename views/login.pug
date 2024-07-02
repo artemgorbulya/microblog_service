@@ -1,0 +1,7 @@
+extends head 
+block content
+    div.container.box-login
+        form#login(method="post" action="/auth/login")
+            input(type="email" placeholder="email" name="email")
+            input(type="password" placeholder="пароль" name="password")
+            input(class="btn" type="submit" value="Увійти")

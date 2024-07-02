@@ -1,0 +1,19 @@
+extends head 
+block content
+    section.page__post.container
+        div.user-post
+            h2= post.title
+            h3= post.description 
+        h3.comments__title Коментарі
+        div.comments__box
+            if comments.length>0
+                each item in comments
+                    div.comment
+                        p= item.comment
+                        h4= item.user_id.username
+            else
+                p Поки немає коментарів
+            form#add-comment(method="post" action="/comments/add-comment")
+                textarea(type="text" name="comment" placeholder='Додати комент')
+                input(type="hidden" name="post_id" value=`${post.id}`)
+                input(type="submit" class="btn" value="Відправити")

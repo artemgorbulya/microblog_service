@@ -1,0 +1,26 @@
+header.header
+    nav.navigation
+        ul.nav
+            if user.role == "admin"
+                li
+                    a(class='button' href='/') Головна
+                li 
+                    a(class='button' href='/admin') Користувачі
+            else 
+                li 
+                    a(class='button' href='/') Головна
+            if user.role === "user"
+                li
+                    a(class='button' href=`/my-posts/${user.id}`) Мої пости
+                li
+                    a(class='button' href=`/add-posts/`) Новий пост
+        ul.authentication
+            if user.role
+                li 
+                    a(class='button' href='/logout') Вийти
+            else 
+                li
+                    a(class='button' href='/login') Увійти
+                li 
+                    a(class='button' href='/register') Реєстрація
+

@@ -1,0 +1,398 @@
+/* Body styles */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  padding: 20px;
+  margin-top: 140px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px 10px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 60px;
+}
+
+/* Navigation styles */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav li a.button {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav li a.button:hover {
+  background-color: #eee;
+}
+
+/* Authentication styles */
+.authentication {
+  display: flex;
+  gap: 10px;
+}
+
+.authentication li a.button {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.authentication li a.button:hover {
+  background-color: #eee;
+}
+
+/* Title styles */
+.my-posts__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Box-post styles */
+.posts__box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Post styles */
+.post {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.post h4 {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.post button {
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.post__read-btn {
+  background-color: #00a74b;
+}
+
+.post__read-btn:hover {
+  background-color: #007140;
+}
+
+/* Delete button styles */
+.post__delete-btn {
+  background-color: #dc3545;
+}
+
+.post__delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Add-post__box styles */
+.add-post__box {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styles */
+.add-post__box h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+#add-post {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Input styles */
+#add-post input[type='text'],
+#add-post textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Submit button styles */
+.add-post__btn {
+  background-color: #00a74b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  text-transform: uppercase;
+}
+
+.add-post__btn:hover {
+  background-color: #007140;
+}
+
+#login {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Input styles */
+#login input[type='email'],
+#login input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 400px;
+}
+
+/* Submit button styles */
+#login .btn {
+  width: 200px;
+  background-color: #00a74b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+}
+
+#login .btn:hover {
+  background-color: #007140;
+}
+
+/* Form styles */
+#register {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Input styles */
+#register input[type='text'],
+#register input[type='email'],
+#register input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 400px;
+}
+
+/* Submit button styles */
+#register .btn {
+  background-color: #00a74b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  text-transform: uppercase;
+}
+
+#register .btn:hover {
+  background-color: #007140;
+}
+
+/* Page__post styles */
+.page__post {
+  padding: 20px;
+}
+
+/* User-post styles */
+.user-post {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-post h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.user-post h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Comments__title styles */
+.comments__title {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Comments__box styles */
+.comments__box {
+  margin-bottom: 20px;
+}
+
+/* Comment styles */
+.comment {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment p {
+  margin-bottom: 5px;
+}
+
+.comment h4 {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* Add-comment form styles */
+#add-comment {
+  margin-top: 20px;
+}
+
+#add-comment textarea[type='text'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#add-comment .btn {
+  margin-top: 20px;
+  background-color: #00a74b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+#add-comment .btn:hover {
+  background-color: #007140;
+}
+
+/* Table styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.head-table {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.list-users {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+
+.head-table div,
+.list-users div {
+  flex: 1;
+  padding: 10px;
+}
+
+.head-table div {
+  font-weight: bold;
+}
+
+/* User styles */
+.user {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.user div {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Button styles */
+.box-btn {
+  display: flex;
+  align-items: center;
+}
+
+.delete {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete:hover {
+  background-color: #c82333;
+}

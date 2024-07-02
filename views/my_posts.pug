@@ -1,0 +1,17 @@
+extends head 
+block content
+    div.container
+        h2.my-posts__title Мої пости
+        if posts.length === 0
+            p Ви ще не створили жодної публікації
+        else
+            div.posts__box
+                each item in posts
+                    div.post
+                        a(href=`/user-post/${item._id}`)
+                            h3= item.title
+                            h4= item.user_id.username
+                            div.button-wrapper
+                                button.post__read-btn Читати
+                                form(action=`/posts/${item._id}/delete` method="post" id="deleteForm")
+                                    button(class="post__delete-btn" type="submit") Видалити

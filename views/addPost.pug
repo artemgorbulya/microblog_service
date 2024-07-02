@@ -1,0 +1,9 @@
+extends head 
+block content
+    .container
+        .add-post__box
+            h2 Додати новий пост
+            form#add-post
+                input(type="text" name="title" placeholder='Назва' required)
+                textarea(type="text" name="description" placeholder='Опис' required)
+                input(type="submit" class="btn add-post__btn" value="Відправити")
