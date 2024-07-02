@@ -1,6 +1,9 @@
 local run
 npm run dev
 
+deploy
+https://microblog-service-a2po.onrender.com/
+
 admin
 login: admin@gmail.com
 pass: admin
