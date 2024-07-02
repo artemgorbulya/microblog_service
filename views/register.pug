@@ -1,0 +1,8 @@
+extends head 
+block content
+    div.container
+        form#register(method="post" action="/auth/register")
+            input(type="text" placeholder="name" name="username" )
+            input(type="email" placeholder="email" name="email" required)
+            input(type="password" placeholder="password" name="password" required)
+            input(class="btn" type="submit" value="Register")
